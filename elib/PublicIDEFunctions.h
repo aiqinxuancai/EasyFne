@@ -28,8 +28,6 @@ ADD_TAB_INF;
 
 //------------------------------------  FN_GET_PRG_TEXT和FN_GET_PRG_HELP功能使用
 
-#define VT_NULL  0
-
 #define VT_DLL_CMD_NAME              51  // DllCmd名称
 #define VT_DLL_CMD_RET_TYPE          52  // DllCmd返回值类型
 #define VT_DLL_CMD_EXPLAIN           53  // DllCmd备注

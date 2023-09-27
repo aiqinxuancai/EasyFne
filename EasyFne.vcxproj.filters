@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="EasyFne.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="elib\fnshare.cpp">
+      <Filter>elib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EasyFne.h" />
+    <ClInclude Include="elib\krnllib.h">
+      <Filter>elib</Filter>
+    </ClInclude>
+    <ClInclude Include="elib\lang.h">
+      <Filter>elib</Filter>
+    </ClInclude>
+    <ClInclude Include="elib\lib2.h">
+      <Filter>elib</Filter>
+    </ClInclude>
+    <ClInclude Include="elib\mtypes.h">
+      <Filter>elib</Filter>
+    </ClInclude>
+    <ClInclude Include="elib\PublicIDEFunctions.h">
+      <Filter>elib</Filter>
+    </ClInclude>
+    <ClInclude Include="elib\untshare.h">
+      <Filter>elib</Filter>
+    </ClInclude>
+    <ClInclude Include="elib\fnshare.h">
+      <Filter>elib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EasyFne.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="elib">
+      <UniqueIdentifier>{74c3f180-0eb1-40de-bb78-c8bf1add92ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
