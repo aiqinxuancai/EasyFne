@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="EasyFne.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EasyFne.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EasyFne.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="elib">
+      <UniqueIdentifier>{139f9248-894c-49dd-ac24-16f409cf5c3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

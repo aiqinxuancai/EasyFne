@@ -1,4 +1,3 @@
-
 #ifndef __MTYPE_H
 #define __MTYPE_H
 
@@ -15,38 +14,38 @@ typedef double DOUBLE;
 typedef int INT;
 typedef short SHORT;
 typedef unsigned long ULONG;
-typedef ULONG *PULONG;
+typedef ULONG* PULONG;
 typedef unsigned short USHORT;
-typedef USHORT *PUSHORT;
+typedef USHORT* PUSHORT;
 typedef unsigned char UCHAR;
 typedef char TCHAR;
-typedef UCHAR *PUCHAR;
-typedef char *PSZ;
-typedef char *LPTSTR;
-typedef const char *LPCTSTR;
+typedef UCHAR* PUCHAR;
+typedef char* PSZ;
+typedef char* LPTSTR;
+typedef const char* LPCTSTR;
 typedef unsigned long DWORD;
 typedef unsigned char BYTE;
 typedef unsigned short WORD;
-typedef FLOAT *PFLOAT;
-typedef BOOL NEAR *PBOOL;
-typedef BOOL FAR *LPBOOL;
-typedef BYTE NEAR *PBYTE;
-typedef BYTE FAR *LPBYTE;
-typedef int NEAR *PINT;
-typedef int FAR *LPINT;
-typedef WORD NEAR *PWORD;
-typedef WORD FAR *LPWORD;
-typedef long FAR *LPLONG;
-typedef DWORD NEAR *PDWORD;
-typedef DWORD FAR *LPDWORD;
-typedef void FAR *LPVOID;
-typedef const void FAR *LPCVOID;
+typedef FLOAT* PFLOAT;
+typedef BOOL NEAR* PBOOL;
+typedef BOOL FAR* LPBOOL;
+typedef BYTE NEAR* PBYTE;
+typedef BYTE FAR* LPBYTE;
+typedef int NEAR* PINT;
+typedef int FAR* LPINT;
+typedef WORD NEAR* PWORD;
+typedef WORD FAR* LPWORD;
+typedef long FAR* LPLONG;
+typedef DWORD NEAR* PDWORD;
+typedef DWORD FAR* LPDWORD;
+typedef void FAR* LPVOID;
+typedef const void FAR* LPCVOID;
 typedef unsigned int UINT;
-typedef unsigned int *PUINT;
+typedef unsigned int* PUINT;
 typedef double DATE;
 typedef long long INT64;
-typedef INT64 NEAR *PINT64;
-typedef INT64 FAR *LPINT64;
+typedef INT64 NEAR* PINT64;
+typedef INT64 FAR* LPINT64;
 
 /////////////////////////////////
 
@@ -65,7 +64,7 @@ typedef struct tagRECT
     LONG    top;
     LONG    right;
     LONG    bottom;
-} RECT, *PRECT, NEAR *NPRECT, FAR *LPRECT;
+} RECT, * PRECT, NEAR* NPRECT, FAR* LPRECT;
 
 typedef const RECT FAR* LPCRECT;
 
@@ -75,7 +74,7 @@ typedef struct _RECTL       /* rcl */
     LONG    top;
     LONG    right;
     LONG    bottom;
-} RECTL, *PRECTL, *LPRECTL;
+} RECTL, * PRECTL, * LPRECTL;
 
 typedef const RECTL FAR* LPCRECTL;
 
@@ -83,28 +82,28 @@ typedef struct tagPOINT
 {
     LONG  x;
     LONG  y;
-} POINT, *PPOINT, NEAR *NPPOINT, FAR *LPPOINT;
+} POINT, * PPOINT, NEAR* NPPOINT, FAR* LPPOINT;
 
 typedef struct _POINTL      /* ptl  */
 {
     LONG  x;
     LONG  y;
-} POINTL, *PPOINTL;
+} POINTL, * PPOINTL;
 
 typedef struct tagSIZE
 {
     LONG        cx;
     LONG        cy;
-} SIZE, *PSIZE, *LPSIZE;
+} SIZE, * PSIZE, * LPSIZE;
 
 typedef SIZE               SIZEL;
-typedef SIZE               *PSIZEL, *LPSIZEL;
+typedef SIZE* PSIZEL, * LPSIZEL;
 
 typedef struct tagPOINTS
 {
     SHORT   x;
     SHORT   y;
-} POINTS, *PPOINTS, *LPPOINTS;
+} POINTS, * PPOINTS, * LPPOINTS;
 
 /////////////////////////////////
 
@@ -153,23 +152,23 @@ typedef struct tagPOINTS
 #define ENTRY_LIB_FUNCTION
 
 #ifdef __COMPILE_FNR
-    #define _WT(text)	                    _T("")
-    #define _CMDS_COUNT(CmdsCount)          0
-    #define _CMDS_PTR(CmdsPtr)              NULL
-    #define _EVENTS_COUNT(EventsCount)      0
-    #define _EVENTS_PTR(EventsPtr)          NULL
-    #define _ELEMENTS_COUNT(ElementsCount)  0
-    #define _ELEMENTS_PTR(ElementsPtr)      NULL
-    #define _FORM_BASE_CLASS	            CWnd
+#define _WT(text)	                    _T("")
+#define _CMDS_COUNT(CmdsCount)          0
+#define _CMDS_PTR(CmdsPtr)              NULL
+#define _EVENTS_COUNT(EventsCount)      0
+#define _EVENTS_PTR(EventsPtr)          NULL
+#define _ELEMENTS_COUNT(ElementsCount)  0
+#define _ELEMENTS_PTR(ElementsPtr)      NULL
+#define _FORM_BASE_CLASS	            CWnd
 #else
-    #define _WT(text)	                    _T(text)
-    #define _CMDS_COUNT(CmdsCount)          CmdsCount
-    #define _CMDS_PTR(CmdsPtr)              CmdsPtr
-    #define _EVENTS_COUNT(EventsCount)      EventsCount
-    #define _EVENTS_PTR(EventsPtr)          ((PEVENT_INFO2)EventsPtr)
-    #define _ELEMENTS_COUNT(ElementsCount)  ElementsCount
-    #define _ELEMENTS_PTR(ElementsPtr)      ElementsPtr
-    #define _FORM_BASE_CLASS	            CFrameWnd
+#define _WT(text)	                    _T(text)
+#define _CMDS_COUNT(CmdsCount)          CmdsCount
+#define _CMDS_PTR(CmdsPtr)              CmdsPtr
+#define _EVENTS_COUNT(EventsCount)      EventsCount
+#define _EVENTS_PTR(EventsPtr)          ((PEVENT_INFO2)EventsPtr)
+#define _ELEMENTS_COUNT(ElementsCount)  ElementsCount
+#define _ELEMENTS_PTR(ElementsPtr)      ElementsPtr
+#define _FORM_BASE_CLASS	            CFrameWnd
 #endif
 
 /////////////////////////////////

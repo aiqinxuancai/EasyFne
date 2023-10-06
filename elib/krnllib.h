@@ -1,4 +1,3 @@
-
 #ifndef __KRNL_LIB_H
 #define __KRNL_LIB_H
 
@@ -56,30 +55,59 @@
 #define     DTC_VARIANT_TYPE        50
 #define     DTC_ERROR_CTL           51
 
-
 /////////////
+#define         DTP_WIN_FORM         ( MAKELONG( DTC_WIN_FORM        , 1) )
+//#define         DTP_RPT_FORM         ( MAKELONG( DTC_RPT_FORM        , 1) )
+#define         DTP_MENU             ( MAKELONG( DTC_MENU            , 1) )
+#define         DTP_FONT             ( MAKELONG( DTC_FONT            , 1) )
+#define         DTP_EDIT             ( MAKELONG( DTC_EDIT            , 1) )
+#define         DTP_PIC_BOX          ( MAKELONG( DTC_PIC_BOX         , 1) )
+#define         DTP_SHAPE_BOX        ( MAKELONG( DTC_SHAPE_BOX       , 1) )
+#define         DTP_DRAW_PANEL       ( MAKELONG( DTC_DRAW_PANEL      , 1) )
+#define         DTP_GROUP_BOX        ( MAKELONG( DTC_GROUP_BOX       , 1) )
+#define         DTP_LABEL            ( MAKELONG( DTC_LABEL           , 1) )
+#define         DTP_BUTTON           ( MAKELONG( DTC_BUTTON          , 1) )
+#define         DTP_CHECK_BOX        ( MAKELONG( DTC_CHECK_BOX       , 1) )
+#define         DTP_RADIO_BOX        ( MAKELONG( DTC_RADIO_BOX       , 1) )
+#define         DTP_COMBO_BOX        ( MAKELONG( DTC_COMBO_BOX       , 1) )
+#define         DTP_LIST_BOX         ( MAKELONG( DTC_LIST_BOX        , 1) )
+#define         DTP_CHKLIST_BOX      ( MAKELONG( DTC_CHKLIST_BOX     , 1) )
+#define         DTP_HSCROLL_BAR      ( MAKELONG( DTC_HSCROLL_BAR     , 1) )
+#define         DTP_VSCROLL_BAR      ( MAKELONG( DTC_VSCROLL_BAR     , 1) )
+#define         DTP_PROCESS_BAR      ( MAKELONG( DTC_PROCESS_BAR     , 1) )
+#define         DTP_SLIDER_BAR       ( MAKELONG( DTC_SLIDER_BAR      , 1) )
+#define         DTP_TAB              ( MAKELONG( DTC_TAB             , 1) )
+#define         DTP_ANIMATE          ( MAKELONG( DTC_ANIMATE         , 1) )
+#define         DTP_DATE_TIME_PICKER ( MAKELONG( DTC_DATE_TIME_PICKER, 1) )
+#define         DTP_MONTH_CALENDAR   ( MAKELONG( DTC_MONTH_CALENDAR  , 1) )
+#define         DTP_DRIVER_BOX       ( MAKELONG( DTC_DRIVER_BOX      , 1) )
+#define         DTP_DIR_BOX          ( MAKELONG( DTC_DIR_BOX         , 1) )
+#define         DTP_FILE_BOX         ( MAKELONG( DTC_FILE_BOX        , 1) )
+#define         DTP_COLOR_PICKER     ( MAKELONG( DTC_COLOR_PICKER    , 1) )
+#define         DTP_HYPER_LINKER     ( MAKELONG( DTC_HYPER_LINKER    , 1) )
+#define         DTP_SPIN             ( MAKELONG( DTC_SPIN            , 1) )
+#define         DTP_COMMON_DLG       ( MAKELONG( DTC_COMMON_DLG      , 1) )
+#define         DTP_TIMER            ( MAKELONG( DTC_TIMER           , 1) )
+#define         DTP_PRINTER          ( MAKELONG( DTC_PRINTER         , 1) )
+#define         DTP_FIELD_INF        ( MAKELONG( DTC_FIELD_INF       , 1) )
+#define         DTP_HTML_VIEWER      ( MAKELONG( DTC_HTML_VIEWER     , 1) )
+#define         DTP_UDP              ( MAKELONG( DTC_UDP             , 1) )
+#define         DTP_SOCK_CLIENT      ( MAKELONG( DTC_SOCK_CLIENT     , 1) )
+#define         DTP_SOCK_SERVER      ( MAKELONG( DTC_SOCK_SERVER     , 1) )
+#define         DTP_SERIAL_PORT      ( MAKELONG( DTC_SERIAL_PORT     , 1) )
+#define         DTP_PRINT_INF        ( MAKELONG( DTC_PRINT_INF       , 1) )
+#define         DTP_GRID             ( MAKELONG( DTC_GRID            , 1) )
+#define         DTP_DATA_SOURCE      ( MAKELONG( DTC_DATA_SOURCE     , 1) )
+#define         DTP_NPROVIDER        ( MAKELONG( DTC_NPROVIDER       , 1) )
+#define         DTP_DBPROVIDER       ( MAKELONG( DTC_DBPROVIDER      , 1) )
+#define         DTP_RGN_BUTTON       ( MAKELONG( DTC_RGN_BUTTON      , 1) )
+#define         DTP_ODBC_DB          ( MAKELONG( DTC_ODBC_DB         , 1) )
+#define         DTP_ODBCPROVIDER     ( MAKELONG( DTC_ODBCPROVIDER    , 1) )
+#define         DTP_COM_OBJECT       ( MAKELONG( DTC_COM_OBJECT      , 1) )
+#define         DTP_VARIANT          ( MAKELONG( DTC_VARIANT         , 1) )
+#define         DTP_VARIANT_TYPE     ( MAKELONG( DTC_VARIANT_TYPE    , 1) )
+#define         DTP_ERROR_CTL        ( MAKELONG( DTC_ERROR_CTL       , 1) )
 
-#define		DTP_LABEL			MAKELONG (DTC_LABEL, 1)
-#define		DTP_WIN_FORM		MAKELONG (DTC_WIN_FORM, 1)
-//	#define		DTP_RPT_FORM		MAKELONG (DTC_RPT_FORM, 1)	// “—∑œ÷π
-#define		DTP_MENU			MAKELONG (DTC_MENU, 1)
-#define		DTP_FONT			MAKELONG (DTC_FONT, 1)
-#define		DTP_TAB				MAKELONG (DTC_TAB, 1)
-#define		DTP_DRAW_PANEL		MAKELONG (DTC_DRAW_PANEL, 1)
-#define		DTP_PIC_BOX			MAKELONG (DTC_PIC_BOX, 1)
-#define		DTP_FIELD_INF		MAKELONG (DTC_FIELD_INF, 1)
-#define		DTP_PRINT_INF		MAKELONG (DTC_PRINT_INF, 1)
-#define		DTP_ODBC_DB			MAKELONG (DTC_ODBC_DB, 1)
-#define		DTP_ODBCPROVIDER	MAKELONG (DTC_ODBCPROVIDER, 1)
-#define		DTP_UDP				MAKELONG (DTC_UDP, 1)
-#define		DTP_SOCK_CLIENT		MAKELONG (DTC_SOCK_CLIENT, 1)
-#define		DTP_SOCK_SERVER		MAKELONG (DTC_SOCK_SERVER, 1)
-#define		DTP_SERIAL_PORT		MAKELONG (DTC_SERIAL_PORT, 1)
-#define		DTP_DATA_SOURCE		MAKELONG (DTC_DATA_SOURCE, 1)
-#define		DTP_PRINTER		    MAKELONG (DTC_PRINTER, 1)
-#define		DTP_COM_OBJECT      MAKELONG (DTC_COM_OBJECT, 1)
-#define     DTP_VARIANT         MAKELONG (DTC_VARIANT, 1)
-#define     DTP_ERROR_CTL       MAKELONG (DTC_ERROR_CTL, 1)
 
 /////////////
 
@@ -103,4 +131,3 @@
 #define     ERR_CONST_INDEX     330
 
 #endif
-
